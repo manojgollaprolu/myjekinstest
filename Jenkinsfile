@@ -18,7 +18,8 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh 'sudo sh deliver.sh'
+                sh ' whoami '
+                sh ' ./deliver.sh'
             }
         }
     }
