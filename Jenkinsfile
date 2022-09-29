@@ -19,6 +19,7 @@ pipeline {
         stage('Deliver') {
             steps {
                 sh ' whoami '
+                sh 'ls -la'
                 sh ' ./deliver.sh'
             }
         }
