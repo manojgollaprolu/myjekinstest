@@ -20,6 +20,7 @@ pipeline {
             steps {
                 sh ' whoami '
                 sh 'ls -la'
+                sh ' chmod u+x deliver.sh'
                 sh ' ./deliver.sh'
             }
         }
